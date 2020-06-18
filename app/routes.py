@@ -7,6 +7,7 @@ from app.models import User, Post
 from datetime import datetime
 from app.email import send_password_reset_email
 
+# комментарий
 
 @app.before_request
 def before_request():
