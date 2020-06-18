@@ -1,0 +1,142 @@
+2020-05-26 15:20:00,530 ERROR: Exception on /user/Susan [GET] [in d:\py\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\py\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\py\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\py\microblog\app\routes.py", line 96, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "d:\py\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "d:\py\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\py\microblog\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\py\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 13, in block "body"
+    {%- block styles %}
+  File "D:\py\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\py\microblog\app\templates\user.html", line 17, in block "app_content"
+    {{ form.hidden_tag() }}
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-05-26 15:20:02,254 ERROR: Exception on /user/Alex [GET] [in d:\py\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\py\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\py\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\py\microblog\app\routes.py", line 96, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "d:\py\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "d:\py\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\py\microblog\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\py\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 13, in block "body"
+    {%- block styles %}
+  File "D:\py\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\py\microblog\app\templates\user.html", line 17, in block "app_content"
+    {{ form.hidden_tag() }}
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-05-26 15:20:20,255 ERROR: Exception on /user/Susan [GET] [in d:\py\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\py\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\py\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\py\microblog\app\routes.py", line 96, in user
+    return render_template('user.html', user=user, posts=posts.items,
+  File "d:\py\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "d:\py\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\py\microblog\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\py\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "d:\py\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 13, in block "body"
+    {%- block styles %}
+  File "D:\py\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\py\microblog\app\templates\user.html", line 17, in block "app_content"
+    {{ form.hidden_tag() }}
+  File "d:\py\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-05-26 15:24:46,111 INFO: Microblog startup [in D:\py\microblog\app\__init__.py:51]
